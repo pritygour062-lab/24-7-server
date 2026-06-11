@@ -5,83 +5,97 @@
     "password": "",
     "type": "offline"
   },
+
   "server": {
     "ip": "Tgamer557.aternos.me",
     "port": 54385,
     "version": "1.20.1",
     "try-creative": false
   },
+
   "position": {
-    "enabled": true,
+    "enabled": false,
     "x": 0,
     "y": 100,
     "z": 0
   },
+
   "utils": {
     "auto-auth": {
       "enabled": true,
       "password": "SoloPlayz"
     },
+
     "anti-afk": {
       "enabled": true,
-      "sneak": true
+      "sneak": false
     },
+
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 300,
       "messages": [
-        "I'm a regular player",
-        "Subscribe to SoloPlayz!",
-        "Want Cheap Premium MC Server? https://discord.gg/VRMUnDkf95"
+        "hi"
       ]
     },
-    "chat-log": true,
+
+    "chat-log": false,
+
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
-    "max-reconnect-delay": 120000
+    "auto-reconnect-delay": 5000,
+    "max-reconnect-delay": 60000
   },
+
   "movement": {
     "enabled": true,
+
     "circle-walk": {
       "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "radius": 2,
+      "speed": 5000
     },
+
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 8000
     },
+
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 15000
     }
   },
+
   "modules": {
     "avoidMobs": true,
     "combat": true,
     "beds": false,
-    "chat": true,
-    "console-commands": true
+    "chat": false,
+    "console-commands": false
   },
+
   "combat": {
     "attack-mobs": true,
     "auto-eat": true
   },
+
   "beds": {
     "pick-up-day": false,
     "place-night": false
   },
+
   "discord": {
     "enabled": false,
     "webhookUrl": "",
     "events": {
-      "connect": true,
-      "disconnect": true,
+      "connect": false,
+      "disconnect": false,
       "chat": false
     }
   },
+
   "chat": {
-    "respond": true
+    "respond": false
   }
 }
