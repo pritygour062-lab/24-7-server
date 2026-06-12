@@ -1,5 +1,6 @@
 {
-  "name": "AFK Bot",
+  "name": "AI Survival Bot",
+
   "bot-account": {
     "username": "MaBotHu",
     "password": "",
@@ -21,6 +22,7 @@
   },
 
   "utils": {
+
     "auto-auth": {
       "enabled": true,
       "password": "SoloPlayz"
@@ -32,8 +34,8 @@
     },
 
     "chat-messages": {
-      "enabled": true,
-      "repeat": true,
+      "enabled": false,
+      "repeat": false,
       "repeat-delay": 300,
       "messages": [
         "hi"
@@ -48,36 +50,70 @@
   },
 
   "movement": {
+
     "enabled": true,
 
     "circle-walk": {
       "enabled": true,
-      "radius": 2,
-      "speed": 5000
+      "radius": 6,
+      "speed": 3500
     },
 
     "look-around": {
       "enabled": true,
-      "interval": 8000
+      "interval": 5000
     },
 
     "random-jump": {
       "enabled": true,
-      "interval": 15000
+      "interval": 10000
     }
   },
 
   "modules": {
+
     "avoidMobs": true,
+
     "combat": true,
+
     "beds": false,
-    "chat": false,
+
+    "chat": true,
+
     "console-commands": false
   },
 
   "combat": {
+
     "attack-mobs": true,
-    "auto-eat": true
+
+    "auto-eat": true,
+
+    "retaliate": true
+  },
+
+  "collect": {
+    "enabled": true,
+    "pickup-items": true
+  },
+
+  "mining": {
+    "enabled": true,
+    "auto-mine": true,
+    "ores-only": false
+  },
+
+  "chat": {
+
+    "respond": true,
+
+    "responses": {
+      "hi": "hello",
+      "hello": "hi",
+      "bot": "yes i am here",
+      "where": "i am mining",
+      "come": "ok"
+    }
   },
 
   "beds": {
@@ -86,16 +122,15 @@
   },
 
   "discord": {
+
     "enabled": false,
+
     "webhookUrl": "",
+
     "events": {
       "connect": false,
       "disconnect": false,
       "chat": false
     }
-  },
-
-  "chat": {
-    "respond": false
   }
 }
