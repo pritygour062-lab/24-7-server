@@ -2,14 +2,14 @@
   "name": "AI Survival Bot",
 
   "bot-account": {
-    "username": "MaBotHu",
+    "username": "BOT",
     "password": "",
     "type": "offline"
   },
 
   "server": {
-    "ip": "tanvir018gg.aternos.me",
-    "port": 60446,
+    "ip": "smpvir.aternos.me",
+    "port": 35493,
     "version": "1.20.1",
     "try-creative": false
   },
@@ -105,7 +105,7 @@
 
   "chat": {
 
-    "respond": true,
+    "respond": true, 
 
     "responses": {
       "hi": "hello",
