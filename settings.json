@@ -1,136 +1,86 @@
 {
-  "name": "AI Survival Bot",
-
+  "name": "AFK Bot",
   "bot-account": {
-    "username": "BOT",
+    "username": "SoloCloudHosting",
     "password": "",
     "type": "offline"
   },
-
   "server": {
     "ip": "smpvir.aternos.me",
     "port": 35493,
     "version": "1.20.1",
     "try-creative": false
   },
-
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
     "y": 100,
     "z": 0
   },
-
   "utils": {
-
     "auto-auth": {
       "enabled": true,
       "password": "SoloPlayz"
     },
-
     "anti-afk": {
       "enabled": true,
       "sneak": false
     },
-
     "chat-messages": {
-      "enabled": false,
-      "repeat": false,
-      "repeat-delay": 300,
+      "enabled": true,
+      "repeat": true,
+      "repeat-delay": 120,
       "messages": [
-        "hi"
+        "Hello!"
       ]
     },
-
-    "chat-log": false,
-
+    "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 5000,
-    "max-reconnect-delay": 60000
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
   },
-
   "movement": {
-
     "enabled": true,
-
     "circle-walk": {
       "enabled": true,
       "radius": 6,
-      "speed": 3500
+      "speed": 2500
     },
-
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 3000
     },
-
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 7000
     }
   },
-
   "modules": {
-
     "avoidMobs": true,
-
-    "combat": true,
-
+    "combat": false,
     "beds": false,
-
     "chat": true,
-
-    "console-commands": false
+    "console-commands": true
   },
-
   "combat": {
-
-    "attack-mobs": true,
-
-    "auto-eat": true,
-
-    "retaliate": true
+    "attack-mobs": false,
+    "attack-players": false,
+    "auto-eat": true
   },
-
-  "collect": {
-    "enabled": true,
-    "pickup-items": true
-  },
-
-  "mining": {
-    "enabled": true,
-    "auto-mine": true,
-    "ores-only": false
-  },
-
-  "chat": {
-
-    "respond": true, 
-
-    "responses": {
-      "hi": "hello",
-      "hello": "hi",
-      "bot": "yes i am here",
-      "where": "i am mining",
-      "come": "ok"
-    }
-  },
-
   "beds": {
     "pick-up-day": false,
     "place-night": false
   },
-
   "discord": {
-
     "enabled": false,
-
     "webhookUrl": "",
-
     "events": {
-      "connect": false,
-      "disconnect": false,
+      "connect": true,
+      "disconnect": true,
       "chat": false
     }
+  },
+  "chat": {
+    "respond": true
   }
 }
